@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body class="font-roboto text-white">
+<header class=" w-full white line py-5">
+    <div class="container mx-auto flex items-center justify-between px-4 relative ">
+        <div class="logo">
+            <img class="w-40" src="images/logo.png" alt="">
+        </div>
+        <div class="search-wrapper flex items-center justify-center gap-2 px-10 text-lg">
+            <button data-hide-search>
+                <span class="material-symbols-rounded text-custom-purple text-2xl pb-3">arrow_back</span>
+            </button>
+            <input class="text-lg" type="text" placeholder="Search"/>
+        </div>
+        <div class="current-location-search flex items-center justify-center gap-2">
+            <div class="search cursor-pointer pt-2">
+                <button data-show-search>
+                    <span class="material-symbols-rounded text-custom-purple text-3xl"> search</span>
+                </button>
+            </div>
+            <div class="current-location flex items-center justify-center gap-4 text-2xl bg-custom-button px-4 py-2 rounded-md cursor-pointer">
+                <img class="w-6 h-6" src="images/my-location.png" alt="">
+                <p class="text-lg hidden lg:block">Current Location</p>
+            </div>
+
+        </div>
+    </div>
+</header>
+<main>
+    <div class="grid grid-cols lg:grid-cols-[420px_1fr]">
+        <div class="left relative lg:fixed lg:h-screen text-center pt-10 pb-7 flex items-center justify-center flex-col">
+            <div class="now-part flex flex-col items-center justify-center pb-4  mx-auto border-b border-white">
+                <span class="material-symbols-rounded text-9xl text-amber-400">sunny</span>
+                <p class="text-2xl font-custom-regular mt-3 mb-1">London</p>
+                <h1 class="text-8xl font-custom-regular mt-1">19&deg </h1>
+                <p class=" text-2xl font-custom-regular mt-2">Rainy</p>
+                <p class=" text-xl font-custom-light">Wednesday, 1,Mar</p>
+            </div>
+            <div class="5-days-forecast font-custom-light mt-6 px-10 py-2 w-96 mx-auto border border-white">
+                <div class="card flex items-center justify-evenly ">
+                    <img class="w-8 h-9" src="images/moon.png" alt="">
+                    <p class="text-lg font-custom-light">7&deg</p>
+                    <p class="text-lg">2 Mar</p>
+                    <p class="text-lg">Thursday</p>
+                </div>
+                <div class="card mt-2 flex items-center justify-evenly ">
+                    <img class="w-8 h-9" src="images/moon.png" alt="">
+                    <p class="text-lg font-custom-light">7&deg</p>
+                    <p class="text-lg">2 Mar</p>
+                    <p class="text-lg">Thursday</p>
+                </div>
+                <div class="card mt-2 flex items-center justify-evenly ">
+                    <img class="w-8 h-9" src="images/moon.png" alt="">
+                    <p class="text-lg font-custom-light">7&deg</p>
+                    <p class="text-lg">2 Mar</p>
+                    <p class="text-lg">Thursday</p>
+                </div>
+                <div class="card mt-2 flex items-center justify-evenly ">
+                    <img class="w-8 h-9" src="images/moon.png" alt="">
+                    <p class="text-lg font-custom-light">7&deg</p>
+                    <p class="text-lg">2 Mar</p>
+                    <p class="text-lg">Thursday</p>
+                </div>
+                <div class="card mt-2 flex items-center justify-evenly ">
+                    <img class="w-8 h-9" src="images/moon.png" alt="">
+                    <p class="text-lg font-custom-light">7&deg</p>
+                    <p class="text-lg">2 Mar</p>
+                    <p class="text-lg">Thursday</p>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-white text-white">
+            <h1 class="text-2xl font-custom-light bg-custom-purple text-white text-center pt-5 lg:pt-5">Today Highlights</h1>
+            <div class="highlights bg-custom-purple grid grid-cols-1  gap-6 sm:gap-7 lg:gap-0 py-5 ">
+                <div class="grid xl:grid-cols-2">
+                    <div class="aiq-index pt-10 lg:pt-0 px-10">
+                        <div class="aiq-index-top flex items-center justify-between">
+                            <div class="aiq-label  flex items-center justify-center">
+                                <span class="material-symbols-rounded text-4xl mr-2 opacity-50 ">air</span>
+                                <p class="text-base font-custom-light opacity-50">Air Quality Index</p>
+                            </div>
+                            <div class="aiq-desc  border border-white text-white px-8 py-1 text-base rounded-lg font-custom-light">
+                                <p>Good</p>
+                            </div>
+                        </div>
+                        <div class="aiq-index-bottom grid grid-cols-1  sm:grid-cols-2 gap-7 lg:gap-7 mt-5">
+                            <div class="highlights-card-sm font-custom-light w-full border px-10 py-2 lg:px-4   border-white rounded-lg">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-base opacity-50">SO2</p>
+                                    <p class="text-lg">7.75</p>
+                                </div>
+                            </div>
+                            <div class="highlights-card-sm font-custom-light w-full border px-10 py-2 lg:px-4 border-white rounded-lg">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-base  opacity-50">SO2</p>
+                                    <p class="text-lg">7.75</p>
+                                </div>
+                            </div>
+                            <div class="highlights-card-sm font-custom-light w-full border px-10 py-2 lg:px-4   border-white rounded-lg">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-base  opacity-50">NO2</p>
+                                    <p class="text-lg">33.6%</p>
+                                </div>
+                            </div>
+                            <div class="highlights-card-sm font-custom-light w-full border px-10 py-2 lg:px-4   border-white rounded-lg">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-base  opacity-50">O3</p>
+                                    <p class="text-lg">38.6</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sunrise-sunset px-10 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-x-7 2xl:pb-20  lg:gap-3 2xl:gap-x-7 2xl:gap-y-1">
+                        <p class="opacity-50 sm:col-span-2 text-lg lg:text-base font-custom-light text-center xl:text-start mt-4 sm:mt-6  xl:mt-0 2xl:mt-0 2xl:mb-6 ">
+                            Sunrise &
+                            Sunset</p>
+                        <div class="highlights-card-sm sunrise font-custom-light w-full border px-10 lg:px-4 py-2 flex gap-4 items-center justify-between border-white rounded-lg  lg:mt-0">
+                            <span class="material-symbols-rounded text-2xl p-2 lg:p-1 xl:p-2 border border-white rounded-lg">sunny</span>
+                            <div class="flex flex-col lg:flex-row xl:flex-col  gap-3  w-32 items-end   xl:items-center lg:gap-3 lg:w-36 lg:items-center justify-between">
+                                <p class="text-base opacity-50">Sunrise</p>
+                                <p class="text-lg ">6:46 AM</p>
+                            </div>
+                        </div>
+                        <div class="highlights-card-sm sunrise font-custom-light w-full border px-10 lg:px-4  py-2 flex gap-4 items-center justify-between border-white rounded-lg ">
+                            <span class="material-symbols-rounded text-2xl p-2 lg:p-1  xl:p-2 border border-white rounded-lg">wb_twilight</span>
+                            <div class="flex flex-col lg:flex-row xl:flex-col gap-3  w-32 items-end  xl:items-center lg:gap-3 lg:w-36 lg:items-center justify-between">
+                                <p class="text-base opacity-50">Sunset</p>
+                                <p class="text-lg">5:39 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="other-details  lg:gap-3 px-10">
+                    <p class="opacity-50 text-lg lg:text-base font-custom-light text-center lg:mt-6">Other Details</p>
+                    <div class="other-details-cards grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 gap-10 sm:gap-7 xl:gap-7 mt-5">
+                        <div class="highlights-card-sm  font-custom-light w-full border  px-10 lg:px-4  py-2 flex gap-4 items-center justify-between border-white rounded-lg ">
+                            <span class="material-symbols-rounded text-2xl p-2 lg:p-1 border border-white rounded-lg">humidity_percentage</span>
+                            <div class="flex flex-col lg:flex-row gap-3  lg:w-36   w-32 items-end  xl:items-center justify-between">
+                                <p class="text-base opacity-50">Humidity</p>
+                                <p class="text-lg">82%</p>
+                            </div>
+                        </div>
+                        <div class="highlights-card-sm  font-custom-light w-full border px-10  lg:px-4  py-2 flex gap-4 items-center justify-between border-white rounded-lg">
+                            <span class="material-symbols-rounded text-2xl p-2 lg:p-1 border border-white rounded-lg">visibility</span>
+                            <div class="flex flex-col lg:flex-row gap-3  lg:w-36     w-32 items-end xl:items-center justify-between ">
+                                <p class="text-base opacity-50">Visibility</p>
+                                <p class="text-lg">12km</p>
+                            </div>
+                        </div>
+                        <div class="highlights-card-sm font-custom-light w-full border px-10 lg:px-4  py-2 flex gap-4 items-center justify-between border-white rounded-lg">
+                            <span class="material-symbols-rounded text-2xl p-2 lg:p-1 border border-white rounded-lg">speed</span>
+                            <div class="flex flex-col lg:flex-row gap-3  lg:w-36   w-32 items-end  xl:items-center justify-between">
+                                <p class="text-base opacity-50">Pressure</p>
+                                <p class="text-lg">12.5kPa</p>
+                            </div>
+                        </div>
+                        <div class="highlights-card-sm font-custom-light w-full border px-10 lg:px-4  py-2 flex gap-4 items-center justify-between border-white rounded-lg">
+                            <span class="material-symbols-rounded text-2xl p-2 lg:p-1 border border-white rounded-lg">thermostat</span>
+                            <div class="flex flex-col lg:flex-row gap-3 lg:w-36  w-32 items-end  xl:items-center justify-between">
+                                <p class="text-base opacity-50">Feels Like</p>
+                                <p class="text-lg">23&deg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

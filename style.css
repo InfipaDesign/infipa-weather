@@ -1,0 +1,101 @@
+@import url("./assets/src/roboto.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+/* ###### RESET start ###### */
+input,
+img,
+a,
+p,
+i,
+h1{
+    display: block;
+}
+
+input,
+a {
+    font-family: inherit;
+    color: inherit;
+}
+
+
+
+/* ###### RESET end ###### */
+
+/* ###### HEADER start ###### */
+.search-wrapper {
+    display: none;
+}
+
+.search-wrapper.active {
+    display: flex;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s all ease-out;
+}
+
+.search-wrapper.active input {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0 20px 10px;
+    border-bottom: 1px solid #886176;
+    transform: scaleX(0);
+    animation: fromScaleZero .5s ease-out forwards;
+    transform-origin: left;
+    font-weight: 300;
+    color: #886176;
+}
+input::placeholder {
+    color: #886176;
+    font-weight: 300;
+}
+.search-wrapper i {
+    line-height: 10px;
+    padding-bottom: 10px;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+@keyframes fromScaleZero {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* ###### HEADER end ###### */
+
+/* ###### MAIN start ###### */
+.left {
+    background: url("./assets/src/images/left-pattern.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+.left:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.left > * {
+    position: relative;
+    z-index: 2;
+}
+/* ###### MAIN end ###### */
